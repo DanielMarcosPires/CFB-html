@@ -1,0 +1,29 @@
+abbr{
+    position: relative;
+}
+abbr[title='Hyper Text Markup Language']::after{
+    text-align: center;
+    content: '';
+    color: transparent;
+    transition: 0.5s;
+}
+abbr[title='Hyper Text Markup Language']:hover:after{
+    content: 'Hyper Text Markup Language';
+    background-clip: content-box;
+    position: absolute;
+    top: 20px;
+    left: -50%;
+    background: #ebebeb;
+    color: #000;
+    width: 200px;
+}
+abbr[title='CFB Cursos']:hover:after{
+    content: 'CFB Cursos';
+    background: #ebebeb;
+    background-clip: content-box;
+    position: absolute;
+    top: 20px;
+    left: -50%;
+    color: #000;
+    width: 200px;
+}
